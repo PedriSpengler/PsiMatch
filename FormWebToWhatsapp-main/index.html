@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Psi Match</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <form action="" class="formulario">
+      
+
+      <h1 class="formulario__titulo">Psi Match</h1>
+      <h3 class="formulario__subtitulo">Seu perfil</h3>
+    
+
+      <label for="cliente" class="formulario__label">Nome</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Digite seu nome completo aqui..."
+      />
+
+      <label for="cliente" class="formulario__label">Telefone</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Digite o seu telefone..."
+      />
+
+      <label for="cliente" class="formulario__label">Email</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Digite seu email..."
+      />
+      
+
+      <label for="fecha" class="formulario__label"
+        >Data de nascimento</label
+      >
+      <input
+        id="fecha"
+        type="date"
+        class="formulario__input"
+        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+      />
+
+      <label for="empleado" class="formulario__label"
+        >Gênero</label
+      >
+      <select id="empleado" name="listaempleados" class="formulario__input">
+        <option>Masculino</option>
+        <option>Feminino</option>
+        <option>Não Binário</option>
+        <option>Transgênero</option>
+        <option>Prefiro não dizer</option>
+      </select>
+
+      <label for="cliente" class="formulario__label">Motivo para consulta</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Digite o motivo da consulta..."
+      />
+
+      <label for="cliente" class="formulario__label">Objetivos do tratamento</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Digite os objetivos do tratamento..."
+      />
+      
+
+      <label for="fecha" class="formulario__label"
+        >Dia para atendimento</label
+      >
+
+      <input
+        id="fecha"
+        type="date"
+        class="formulario__input"
+        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+      />
+
+      <label for="hora" class="formulario__label"
+        >Horário para seu atendimento</label
+      >
+      <input id="hora" type="time" class="formulario__input" />
+
+      <label for="servicio" class="formulario__label"
+        >Valor preferível para o atendimento</label
+      >
+      <select id="servicio" name="listaservicios" class="formulario__input">
+        <option>$VALOR1</option>
+        <option>$VALOR2</option>
+        <option>$VALOR3</option>
+        <option>$VALOR4</option>
+        <option>$VALOR5</option>
+      </select>
+
+
+      <h3 class="formulario__subtitulo">O que você busca no seu psicólogo?</h3>
+
+      <label for="empleado" class="formulario__label"
+        >Gênero</label
+      >
+      <select id="empleado" name="listaempleados" class="formulario__input">
+        <option>Masculino</option>
+        <option>Feminino</option>
+        <option>Não Binário</option>
+        <option>Transgênero</option>
+        <option>Prefiro não dizer</option>
+      </select>
+
+      <label for="cliente" class="formulario__label">Especialidade</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Digite a especialidade desejada..."
+      />
+
+      <label for="servicio" class="formulario__label"
+      >Idade</label
+    >
+    <select id="servicio" name="listaservicios" class="formulario__input">
+      <option>18-22 anos</option>
+      <option>22-28 anos</option>
+      <option>28-34 anos</option>
+      <option>34-40 anos</option>
+      <option>40-46 anos</option>
+      <option>46-52 anos</option>
+      <option>+52 anos</option>
+    </select>
+
+    <label for="servicio" class="formulario__label"
+      >Experiência</label
+    >
+    <select id="servicio" name="listaservicios" class="formulario__input">
+      <option>1 ano</option>
+      <option>2-4 anos</option>
+      <option>4-6 anos</option>
+      <option>6-10 anos</option>
+      <option>+10 anos</option>
+    </select>
+
+    <label for="cliente" class="formulario__label">Habilidade e comunicação</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Digite as habilidades desejadas..."
+      />
+
+      <div id="respuesta"></div>
+      
+
+      <button id="submit" class="formulario__submit">Procurar Psicólogo</button>
+
+      
+    </form>
+    <script src="js/form.js"></script>
+  </body>
+</html>

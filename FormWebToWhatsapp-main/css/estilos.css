@@ -1,0 +1,360 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-image: url(../assets/fundo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 100%;
+}
+.formulario {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+  position: relative;
+  background: rgba(176, 5, 214, 0.97);
+  border-radius: 2rem;
+}
+
+.imgLogo {
+  width: 100px;
+  height: 100px;
+  border-radius: 150px;
+  display: block;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  /*border: 1px solid rgba(109, 86, 10, 0.7);*/
+}
+
+.formulario__titulo,
+.formulario__subtitulo,
+.formulario__parrafo {
+  text-align: center;
+  margin-top: 0;
+}
+.formulario__titulo,
+.formulario__subtitulo {
+  color: white;
+}
+.formulario__parrafo {
+  color: white;
+}
+.formulario__input,
+.formulario__label {
+  display: block;
+  width: 100%;
+  font-size: 1, 3em;
+}
+.formulario__input {
+  padding: 10px;
+
+  /* puedo colocar otro color pero con transparencia asi: background: rgba(0,0,0,0.1) porque sino no se ven las label, aunque ya no es necesario porque ya no estan sobre los input y ademas le quite el z-index*/
+  border: 1px solid white;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.formulario__input:focus {
+  /*outline: 1px solid rgba(0,0,0,0.7);*/
+  outline: none;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
+}
+/*.formulario__input:focus + .formulario__label{
+    margin-top: -120px;
+}*/
+.formulario__label {
+  padding-left: 15px;
+  /*position: absolute;*/
+  /*margin-top: -78px;*/
+  /*z-index: -20;*/
+  color: white;
+  /*transition: all 0.2s;*/
+  margin: 2px;
+}
+.formulario__submit {
+  background: white;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  display: block;
+  width: 50%;
+  font-size: 1, 3em;
+}
+
+/*Centrar los campos del formulario (Los input y el boton de Enviar al WhatsApp, que tambien es un input)*/
+
+.formulario__input,
+.formulario__submit {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*.fijar {
+    margin-top: -120px;
+} */
+
+/* respuesta del formulario */
+#respuesta {
+  width: 100%;
+  height: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+#respuesta.fail {
+  color: red;
+}
+#respuesta.send {
+  color: rgb(2, 255, 2);
+}
+
+
+
+
+
+.card-principal{
+  position: absolute;
+  width: 436px;
+  height: 608px;
+  border-radius: 20px;
+  left: calc(50% - 436px/2);
+  top: calc(50% - 608px/2);
+  background: #121214;
+  box-shadow: 0px 294px 118px rgba(0, 0, 0, 0.03), 0px 165px 99px rgba(0, 0,  0, 0.1), 0px 73px 73px rgba(0, 0, 0, 0.17), 0px 18px 40px rgba(0, 0, 0, 0.2), 0px 0px 0px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card-principal header{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  position: relative;
+  width: 263px;
+  height: 110px;
+  left: 40px;
+  top: 45px;
+  z-index: 1;
+}
+
+.card-principal header h1{
+  width: 263px;
+  height: 40px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ECE4EF;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
+}
+
+.card-principal header p{
+  width: 263px;
+  height: 54px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #D8CEDE;
+}
+
+.card-principal main .veiculos{
+  width: 198px;
+  height: 74px;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  left: 40px;
+  top: 120px;
+}
+
+.card-principal main .veiculos h2{
+  width: 198px;
+  height: 18px;
+  font-family: 'Source Sans Pro';
+  color: #9C83A7;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.card-principal main .veiculos h3{
+  width: 198px;
+  height: 54px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+  color: #D8CEDE;
+}
+
+.card-principal main .especie{
+  position: relative;
+  display: flex;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 2px;
+  width: 198px;
+  height: 38px;
+  left: 40px;
+  top: 100px;
+
+}
+
+.card-principal main .especie h2{
+  width: 198px;
+  height: 18px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #9C83A7;
+  display: flex;
+  align-items: center;
+}
+
+.card-principal main .especie h3{
+  width: 198px;
+  height: 18px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+  color: #D8CEDE;
+}
+
+.card-principal main .altura{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 2px;
+  width: 198px;
+  height: 38px;
+  z-index: 1;
+  left: 40px;
+  top: 120px;
+  position: relative;
+}
+
+.card-principal main .altura h2{
+  width: 198px;
+  height: 18px;
+  color: #9C83A7;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.card-principal main .altura h3{
+  width: 198px;
+  height: 18px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+  color: #D8CEDE;
+}
+
+.card-principal main .localidade{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 2px;
+  width: 198px;
+  height: 38px;
+  left: 40px;
+  top: 140px;
+}
+
+.card-principal main .localidade h2{
+  width: 198px;
+  height: 18px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;  
+  color: #9C83A7;
+}
+
+.card-principal main .localidade h3{
+  width: 198px;
+  height: 18px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+  color: #D8CEDE;
+}
+
+
+.card-principal main .background{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
+
+.card-principal main .background .background-image{
+  position: absolute;
+  height: 2%;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background: linear-gradient(90.24deg, rgba(14, 23, 101, 0.45) 0%, rgba(53, 14, 88, 0.45) 98.1%), #121214;
+  width: 4%;
+  border-radius: 20px;
+  left: calc(50% - 436px/2);
+  top: calc(50% - 608px/2);
+}
+
+.card-principal main .background .background-character{
+  position: absolute;
+  width: 427px;
+  height: 558px;
+  right: -103px;
+  bottom: 0px;
+}
+
+.background-character img {
+  width: 100px; 
+  height: auto; 
+  display: block;
+  margin: auto; 
+}
